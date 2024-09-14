@@ -1,0 +1,71 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-medium) var(--padding-large);
+    background-color: var(--text-light);
+    box-shadow: var(--box-shadow);
+}
+
+.logo {
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    color: var(--background-dark);
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: var(--padding-medium);
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    font-size: var(--font-size-medium);
+    color: var(--text-dark);
+    transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    color: var(--primary-gradient-end);
+}
+
+.auth-buttons {
+    display: flex;
+    gap: var(--padding-small);
+
+}
+
+.auth-buttons .login {
+    background-color: transparent;
+    border: none;
+    font-size: var(--font-size-medium);
+    padding: var(--padding-small) var(--padding-medium);
+    text-align: center;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.auth-buttons .login:hover {
+    color: var(--primary-gradient-end);
+}
+
+.auth-buttons .signup {
+    background-color: var(--primary-gradient-start);
+    color: var(--text-light);
+    border: none;
+    padding: var(--padding-small) var(--padding-medium);
+    border-radius: var(--border-radius-small);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.auth-buttons .signup:hover {
+    background-color: var(--primary-gradient-end);
+    transform: scale(1.05);
+}

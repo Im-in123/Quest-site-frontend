@@ -1,0 +1,199 @@
+ 
+.container {
+    margin-top: 3rem;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+}
+.sectionWrapper{
+    width: 70%;
+     display: flex;
+    box-shadow: var(--box-shadow);
+}
+.leftSection {
+    width: 45%;
+    background: linear-gradient(135deg, var(--background-dark) 0%, var(--background-darker) 100%);
+    color: var(--text-light);
+    padding: var(--padding-large);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
+}
+
+.leftSection h1 {
+    font-size: var(--font-size-xlarge);
+    margin-bottom: var(--margin-medium);
+}
+
+.leftSection p {
+    margin-bottom: var(--margin-large);
+}
+
+.leftSection a {
+    margin-top: var(--margin-large);
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: var(--font-size-small);
+}
+
+.rightSection {
+    width: 55%;
+    background: var(--text-light);
+    padding: var(--padding-large);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
+}
+
+.signupBox h2 {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--margin-medium);
+}
+
+.inputGroup {
+    width: 100%;
+    margin-bottom: var(--margin-medium);
+}
+
+.inputGroup label {
+    font-size: var(--font-size-small);
+    color: var(--text-muted);
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: var(--padding-small);
+    /* margin-top: var(--margin-small); */
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-small);
+    font-size: var(--font-size-medium);
+}
+
+.inputGroup.error input {
+    border-color: red;
+}
+
+.inputGroup.error .input-icon {
+    color: red;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+/* Icon container for inputs */
+.input-icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    color: var(--icon-color, #888);
+    font-size: 18px;
+}
+
+.input-icon-container input {
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 40px;
+    font-size: 16px;
+}
+
+/* Password toggle styling */
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--icon-color, #888);
+}
+.continueButton {
+    width: 100%;
+    padding: var(--padding-small);
+    background: linear-gradient(135deg, var(--primary-gradient-start) 0%, var(--primary-gradient-end) 100%);
+    border: none;
+    border-radius: var(--border-radius-small);
+    color: var(--text-light);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    margin-top: var(--margin-small);
+}
+
+.continueButton:hover {
+    opacity: 0.9;
+}
+
+.signupBox p {
+    margin: var(--margin-large) 0;
+    font-size: var(--font-size-small);
+    color: var(--text-muted);
+}
+
+.socialButton {
+    width: 100%;
+    padding: var(--padding-small);
+    border: none;
+    border-radius: var(--border-radius-small);
+    color: var(--text-light);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    margin-bottom: var(--margin-small);
+}
+
+.socialButton.twitter {
+    background-color: var(--twitter-color);
+}
+
+.socialButton.facebook {
+    background-color: var(--facebook-color);
+}
+
+.socialButton:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .leftSection, .rightSection {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .leftSection {
+        padding: var(--padding-medium);
+        text-align: center;
+    }
+
+    .rightSection {
+        padding: var(--padding-medium);
+    }
+
+    .leftSection h1, .signupBox h2 {
+        font-size: var(--font-size-large);
+    }
+
+    .continueButton, .socialButton {
+        font-size: var(--font-size-small);
+    }
+}
+/* Add to your existing CSS */
+
+/* Icon container for inputs */
